@@ -123,11 +123,11 @@ const watchList = [
 // const ratings = watchList.map(movie => movie.Title)
 
 // ...but if we want to grab multiple property values, we use a different syntax:
-const ratings = watchList.map((movie) => ({
-  title: movie.Title,
-  rating: movie.imdbRating,
+const ratings = watchList.map((listItem) => ({
+  title: listItem.Title,
+  rating: listItem.imdbRating,
 }));
-// "movie" can be named anything, but should be contextual for better readability.
+// I generally use naming convention to represent individual indexes of the array, e.g. (watchList, listItem)
 
 console.log(ratings);
 
