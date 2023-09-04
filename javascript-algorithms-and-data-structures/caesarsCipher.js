@@ -1,4 +1,4 @@
-function rot13(str) {
+const rot13 = (str) => {
     // Use regex to target all uppercase and lowercase letters for replacement.
   return str.replace(/[A-Za-z]/g, (match) => {
     // If the letter is in the first half of the alphabet, increment by 13.
